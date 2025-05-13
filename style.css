@@ -1,0 +1,464 @@
+a {
+    text-decoration: none;
+}
+
+
+/**************/
+/**********PC**/
+/*************/
+
+/********** header **/
+.main_img {}
+
+.main_img img {
+    display: block;
+    width: 580px;
+    height: auto;
+    margin: 0.25rem auto;
+}
+
+/********** nav **/
+nav {
+    background: #111;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    align-items: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li:not(:first-child)::before {
+    content: "｜";
+    color: #fff
+}
+
+/* nav li a:not(:nth-of-type(2),:last-child){
+    color: #fff;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    line-height: 2;
+} */
+
+nav li a {
+    color: #fff;
+    padding: 0 1.25rem;
+    font-size: 1rem;
+    line-height: 2;
+}
+
+*/
+/* nav li:last-child,:nth-of-type(2) a{
+    width: 50px;
+    height: auto;
+} */
+
+main_visual {
+    /* vertical-align: top; */
+    border: none;
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+}
+
+.main_visual img {
+    max-width: 100%;
+    /**表示領域からはみ出ないようにする**/
+    height: auto;
+    /**画像をトリミングしないようにする**/
+    width: 1920px;
+}
+
+
+/*****/
+.event_outline {
+    /* margin: 60px 0; */
+    /* margin: 0 auto; */
+    text-align: center;
+    background: #d2a36c;
+    padding: 5%;
+    /* margin: 7.5% 0 0; */
+    margin: 0 0;
+}
+
+.wrapper {
+    width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.event_outline h3 {
+    font-size: 1.4rem;
+    display: inline-block;
+    text-align: left;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    color: #fff;
+}
+
+.event_outline_inner {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px auto;
+    padding:15px 15px 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.event_outline_item p{
+    /* text-align: center; */
+    font-size: 2rem;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+.event_outline_item table {
+    margin: 5px auto;
+    /* 上下3px 左右auto */
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+    white-space: nowrap;
+    line-height: 30px;
+    /* padding: 15px 0 15px; */
+    /* width: 100%; */
+    /* 背景色指定 */
+}
+
+
+.event_outline_item th {
+    width: 15%;
+    font-size: 2rem;
+    letter-spacing: 0.05em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(210, 163, 108);
+    vertical-align: middle;
+    border-right: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+td > a::after {
+    position: absolute;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: #000000;
+    bottom: -1px;
+    transform: scale(0, 1);
+    transform-origin: right top; /*変形（アンダーラインの伸長）の原点がaタグ（各メニュー）の右端*/
+    transition: transform 0.3s;  /*変形の時間*/
+    }
+    
+td > a:hover::after {
+    transform: scale(1, 1); /*ホバー後、x軸方向に1（相対値）伸長*/
+    }
+
+.caution{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.address{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+.detail{
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+
+.event_outline_item th,
+td {
+    border: solid 1px #111;
+    font-size: 1.3rem;
+    text-indent:0px;
+    font-weight: bold;
+    padding: 15px;
+    /* 枠線指定 */
+}
+
+.event-outline_item td {
+    width: 100%;
+    display: block;
+    flex-grow: 1;
+}
+
+.event_outline_item th {
+    background-color: #d2a36c;
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: center;
+    
+    /* 背景色指定 */
+}
+
+/***** 出店リスト *****/
+.shop_list {
+    margin: auto;
+    background-color: #ffcc00;
+    padding-top: 60px;
+
+    /* display: flex;
+    justify-content: center; */
+}
+
+.shop_list h2 {
+    font-size: 1.9rem;
+    text-align: center;
+    padding-bottom: 1.4rem;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom:30px;
+}
+
+/*****/
+/*タブ切り替え全体のスタイル*/
+.tabs {
+    margin-top: 70px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 84%;
+    margin: 0 auto;
+}
+
+/*タブのスタイル*/
+.tab_item {
+    width: calc(100%/2);
+    height: 50px;
+    border-bottom: 3px solid #5ab4bd;
+    background-color: #ffcc00;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.tab_item:hover {
+    opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+    display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+    display: none;
+    padding: 40px 40px 0;
+    clear: both;
+    overflow: hidden;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#all:checked~#all_content,
+#programming:checked~#programming_content,
+#design:checked~#design_content {
+    display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked+.tab_item {
+    background-color: #f18d00;
+    color: #fff;
+}
+
+/*****/
+.shop_list_inner {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.shop_list_item {
+    width: 300px;
+}
+
+.list_img {
+    width: 300px;
+    height: 157px;
+    object-fit: cover;
+}
+
+.list_caption {
+    width: 75%;
+    margin: 0 auto;
+}
+
+.list_caption img {
+    aspect-ratio: 4/3;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border: solid 5px #cccccc;
+}
+
+.list_caption_title {
+    text-align: center;
+    font-size: 0.65rem;
+    background: rgba(255, 218, 0, 0.2);
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.list_caption_txt {
+    font-size: 0.75rem;
+    line-height: 1.4;
+}
+
+.map {
+    background: #fff;
+    padding: 5%;
+    margin: 30px auto;
+    /* margin: 75px 0  75px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.map p {
+    text-align: center;
+    font-size: 1.8rem;
+    padding-bottom:40px;
+}
+
+.map h3 {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+
+figure {
+    display: table;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    padding-top :15px;
+    line-height: 1.5;
+}
+
+/*整えるためのCSS */
+
+img {
+    width: 100%;
+    object-fit: contain;
+    height: auto;
+}
+
+.img-box {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 60px;
+  right: 20px;
+  background-color: #ff6600;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  border-radius: 5px;
+  text-decoration: none;
+  box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  z-index: 1000;
+  display: none; /* 最初は非表示 */
+  transition: background-color 0.3s ease;
+}
+
+.back-to-top:hover {
+  background-color: #e05500;
+}
+
+
+/* ***footer**/
+footer {
+    background: #000000;
+    color: #fff;
+    text-align: center;
+}
+
+.footer_inner {
+    width: 84%;
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 30px;
+}
+
+/* .footer_logo_area {
+    border-bottom: 1px solid #999;
+} */
+
+.footer_logo_area img{
+    width: 300px;
+    height: auto;
+    margin: -10px 12px 0 0;
+    text-align: center;
+}
+
+.footer_logo_area a {
+    color: #fff;
+    font-size: 14px;
+    display: block;
+}
+
+
+.footer_yago {
+    letter-spacing: 10px;
+}
+
+.footer_logo_area p {
+    /* margin: 30px 0; */
+}
+
+.sns_logo_area {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /* 画像の間に均等に余白を設定 */
+}
+
+.sns_logo_area img {
+    /* 画像が3つ並ぶように設定 */
+    height: auto;
+    width: 50px;
+    z-index: 1;
+}
+
+/***/
+small {
+    text-align: center;
+    font-size: 16px;
+    padding: 0 0 16px 48px;
+}
