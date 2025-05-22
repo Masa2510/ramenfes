@@ -8,8 +8,9 @@
     <title>卒業制作練習| 48期10月生</title>
 
     <!--css-->
-    <link href="reset.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <link href="./css/reset.css" rel="stylesheet">
+    <link href="./css/vegas.css" rel="stylesheet">
+    <link href="./css/style.css" rel="stylesheet">
 </head>
 
 
@@ -18,20 +19,20 @@
 <body>
     <header>
         <h1 class="main_img">
-            <img src="名称未設定-3.png" alt="">
+            <img src="img/名称未設定-3.png" alt="">
         </h1>
         <nav>
             <ul>
-                <li><a href="#">開催概要</a></li>
-                <li><a href="#">出店リスト</a></li>
+                <li><a href="#event_about">開催概要</a></li>
+                <li><a href="#shop_list">出店リスト</a></li>
                 <li><a href="#">開催イベント</a></li>
                 <li><a href="#">アクセス</a></li>
-                <!-- <li><a href="#"><img src="icons8-ツイッターx-24.png" alt="webstreet" class="footer_logo"></a></li>
-                <li><a href="#"><img src="icons8-インスタ-30.png" alt="webstreet" class="footer_logo" ></a></li> -->
-                <li><a href="#">X</a></li>
-                <li><a href="#">Instagram</a></li>
-                
-                
+                <li><a href="#"><img src="img/icons8-ツイッターx-30.jpg" alt="x(Twitter)" class="nav_img"></a></li>
+                <li><a href="#"><img src="img/icons8-instagram-50.jpg" alt="Instagram" class="nav_img"></a></li>
+                <!--<li><a href="#">X</a></li>
+                <li><a href="#">Instagram</a></li>-->
+
+
             </ul>
         </nav>
     </header>
@@ -45,7 +46,7 @@
 
     <main>
         <div class="main_visual">
-            <img src="名称未設定-5.jpg" alt="俺の生きる道" class="list_img">
+            <img src="img/名称未設定-5.jpg" alt="俺の生きる道" class="list_img">
         </div>
         <div class="event_outline">
             <div class="wrapper">
@@ -58,29 +59,49 @@
             <div class="event_outline_inner">
                 <div class="event_outline_item">
 
-                    
-                    <p>開催概要</p>
+
+                    <p class="event_about">開催概要</p>
 
                     <table>
                         <tbody>
                             <tr>
                                 <th>日時</th>
-                                <td><a>【第1弾】2025年2月28日(金)  〜 3月3日(月) 各日11:00～20:00 (最終日は18:00終了)<br>
-                                    【第2弾】2025年3月6日(木) 〜 3月9日(日) 各日11:00～20:00 (最終日は18:00終了)</a><br>
-                                     <div class="caution">※開催時間は、変更となる場合がございます。※最終発券は各日19:30（最終日は17:30）</div></td>
+                                <td>
+                                    <div class="sp_center_box">
+                                        <a>【第1弾】2025年2月28日(金) 〜 3月3日(月) 
+                                            <br class="sp_br">各日11:00～20:00 (最終日は18:00終了)
+                                            <span class="line"></span>
+                                            <br>
+                                            
+                                            【第2弾】2025年3月6日(木) 〜 3月9日(日) 
+                                            <br class="sp_br">各日11:00～20:00(最終日は18:00終了)
+                                            <span class="line"></span>
+                                        </a>
+                                    </div><!--<br>-->
+                                    <div class="caution">
+                                        <p>※開催時間は、変更となる場合がございます。<br class="sp_br">※最終発券は各日19:30（最終日は17:30）</p>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <th>場所</th>
-                                <td>さいたまスーパーアリーナけやきひろば<br>
+                                <td>
+                                    <div class="sp_center_box"><a>さいたまスーパーアリーナけやきひろば</a></div>
 
-                                    <div class="address">〒330-0081 埼玉県さいたま市中央区新都心10</div></td>
+                                    <div class="address">
+                                        <p>〒330-0081<br class="sp_br"> 埼玉県さいたま市中央区新都心10</p>
+                                    </div>
+                                </td>
                             </tr>
                             <tr>
                                 <th>入場料</th>
-                                <td>無料<br>
-                                    <div class="detail">ラーメンはチケット制・1杯1,000円・当日会場にてお買い求めください。<br>
-                                    さいコイン･たまポンでも購入可能です！<br>
-                                    詳しくは「さいたま市みんなのアプリ」HPへ。</div>
+                                <td>
+                                    <div class="sp_center_box"><a>無料</a></div>
+                                    <div class="detail">
+                                        <p>※ラーメンはチケット制・1杯1,000円・当日会場にてお買い求めください。<br>
+                                            ※さいコイン･たまポンでも購入可能です！<br>
+                                            詳しくは「さいたま市みんなのアプリ」HPへ。</p>
+                                    </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -103,138 +124,308 @@
                 <div class="tab_content" id="all_content">
                     <p>2025年2月28日（金）～3月3日（月）</p>
                     <div class="shop_list_inner">
+                    
+                    <!-- <div class="pc_shop_group">    -->
+                        <div class="shop_list_item">
+                            <img src="img/01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
+                            <div class="list_caption">
+                            <div class="flex1">
+                                <div class="box-inner">
+                                    <h3 class="el_h3title">in EZO 本店</h3>
+                                    <img src="img/01_inezo_img.jpg" alt="in EZO 本店" class="list_ramen_img">
+                                </div>
+                            </div>
+                                    
+                            <div class="flex2">  
+                                <div class="box-inner">
+                                    <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
+                                </div>
+                            </div>
+                                <div class="box-inner">
+                                    <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
+                                </div>
+                            </div>
+                            <!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
 
                         <div class="shop_list_item">
-                            <img src="01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
+                            <img src="img/01_fujitani_logo_b.jpg" alt="鬼そば藤谷" class="list_img">
                             <div class="list_caption">
-                                <h3>in EZO 本店</h3>
-                                <img src="01_inezo_img.jpg" alt="in EZO 本店">
-                                <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
-                                <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
+                            <div class="flex1">
+                                <div class="box-inner">
+                                    <h3>鬼そば藤谷</h3>
+                                    <img src="img/01_fujitani_img.jpg" alt="鬼そば藤谷" class="list_ramen_img">
+                                </div>
+                            </div>
+                                    
+                            <div class="flex2">      
+                                <div class="box-inner">
+                                <p class="list_caption_title">松坂牛の煮込み濃厚味噌󠄀ラーメン〜春の旬素材スープ〜</p>
+                                </div>
+                                <div class="box-inner">
+                                    <p class="list_caption_txt">世界の中心ニューヨークラーメングランプリで最も売れた殿堂入り濃厚味噌󠄀ラーメン</p>
+                                </div>
+                            </div>
+                            </div>
+                            <!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
+
+                        <div class="shop_list_item">
+                            <img src="img/01_ikirumichi_logo.svg" alt="俺の生きる道" class="list_img">
+                            <div class="list_caption">
+                                <div class="flex1">
+                                <div class="box-inner">
+                                    <h3>俺の生きる道</h3>
+                                    <img src="img/01_ikirumichi_img.jpg" alt="俺の生きる道" class="list_ramen_img">
+                                </div>
+                                </div>
+                                    
+                                <div class="flex2">      
+                                    <div class="box-inner">
+                                        <p class="list_caption_title">俺のラーメン</p>
+                                    </div>
+                                    <div class="box-inner">
+                                        <p class="list_caption_txt">二郎系本格派！豚骨×豚肉スープ！お店と変わらない最高の味！</p>
+                                
+                                    </div>
+                                </div>
+                            </div>
+                            <!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
+                    <!-- </div>  -->
+                    
+                    <!-- <div class="pc_shop_group">  -->
+                        <div class="shop_list_item">
+                            <img src="img/01_yoshikawa_logo.svg" alt="寿製麺よしかわ" class="list_img">
+                            <div class="list_caption">
+                                <div class="box-inner">
+                                    <h3>寿製麺よしかわ</h3>
+                                    <img src="img/01_yoshikawa_img.jpg" alt="寿製麺よしかわ">
+                                
+                                <p class="list_caption_title">名古屋コーチンの極上炙り肉中華そば塩</p>
+                                <p class="list_caption_txt">名古屋コーチン×自家製塩だれ　素材の旨味際立つ極上シンプルラーメン</p>
+                                </div>
                             </div><!--END .list_caption-->
                         </div><!--END .shop_list_item-->
 
                         <div class="shop_list_item">
-                            <img src="01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
+                            <img src="img/01_gitoya_logo.svg" alt="燕三条中華そばぎと家" class="list_img">
                             <div class="list_caption">
-                                <h3>in EZO 本店</h3>
-                                <img src="01_inezo_img.jpg" alt="in EZO 本店">
-                                <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
-                                <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
+                                <div class="box-inner">
+                                    <h3>燕三条中華そばぎと家</h3>
+                                    <img src="img/01_gitoya_img.jpg" alt="燕三条中華そばぎと家">
+                                
+                                <p class="list_caption_title">ぎと家の中華そば（手揉みver）</p>
+                                <p class="list_caption_txt">加水手揉み麺×豚骨背脂スープ！新潟の煮干し香るご当地ラーメン</p>
+                            </div>
                             </div><!--END .list_caption-->
                         </div><!--END .shop_list_item-->
 
                         <div class="shop_list_item">
-                            <img src="01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
+                            <img src="img/01_chikarabo_logo.png" alt="CHIKARABO" class="list_img">
                             <div class="list_caption">
-                                <h3>in EZO 本店</h3>
-                                <img src="01_inezo_img.jpg" alt="in EZO 本店">
-                                <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
-                                <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
+                                <div class="box-inner">
+                                    <h3>トーキョーニュー<br>ミクスチャーヌードル<br>八咫烏 CHIKARABO</h3>
+                                    <img src="img/01_chikalabo_img.jpg" alt="CHIKARABO">
+                                
+                                <p class="list_caption_title">Dystopia 青椒肉絲</p>
+                                <p class="list_caption_txt">和牛テールのスープ＆特製麺、奥深いイベント限定ラーメン</p>
+                            </div>
+                            </div><!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
+                    <!-- </div> -->
+
+                    <!-- <div class="pc_shop_group">  -->
+
+                        <div class="shop_list_item">
+                            <img src="img/01_aishin_logo.svg" alt="麺屋愛心" class="list_img">
+                            <div class="list_caption">
+                                <div class="box-inner">
+                                    <h3>麺屋愛心</h3>
+                                    <img src="img/01_aishin_img.jpg" alt="麺屋愛心">
+                                
+                                <p class="list_caption_title">新潟生姜醤油らーめん</p>
+                                <p class="list_caption_txt">生姜香る熟成醤油とたっぷりのチャーシュー　新潟ご当地ラーメン！</p>
+                            </div>
                             </div><!--END .list_caption-->
                         </div><!--END .shop_list_item-->
 
                         <div class="shop_list_item">
-                            <img src="01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
+                            <img src="img/01_yosuke_logo.svg" alt="麺屋 ようすけ" class="list_img">
                             <div class="list_caption">
-                                <h3>in EZO 本店</h3>
-                                <img src="01_inezo_img.jpg" alt="in EZO 本店">
-                                <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
-                                <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
+                                <div class="box-inner">
+                                    <h3>麺屋 ようすけ</h3>
+                                    <img src="img/01_yosuke_img.jpg" alt="麺屋 ようすけ">
+                                
+                                <p class="list_caption_title">佐野ラーメン チャーシュー盛り</p>
+                                <p class="list_caption_txt">佐野名物！ツルムチ麺×旨出汁スープ！行列必至ご当地ラーメン！</p>
+                            </div>
                             </div><!--END .list_caption-->
                         </div><!--END .shop_list_item-->
 
                         <div class="shop_list_item">
-                            <img src="01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
-                            <div class="list_caption">
-                                <h3>in EZO 本店</h3>
-                                <img src="img/01_inezo_img.jpg" alt="in EZO 本店">
-                                <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
-                                <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
-                            </div><!--END .list_caption-->
-                        </div><!--END .shop_list_item-->
+                            
+                        </div>
+                        <!-- END .shop_list_item -->
+                    <!-- </div> -->
 
-                        <div class="shop_list_item">
-                            <img src="01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
-                            <div class="list_caption">
-                                <h3>in EZO 本店</h3>
-                                <img src="01_inezo_img.jpg" alt="in EZO 本店">
-                                <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
-                                <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
-                            </div><!--END .list_caption-->
-                        </div><!--END .shop_list_item-->
-
-                </div><!--END .shop_list_inner -->
+                    </div><!--END .shop_list_inner -->
                 </div>
 
                 <div class="tab_content" id="programming_content">
                     <p>2025年3月6日（木）～3月9日（日）</p>
-                    
+
                     <div class="shop_list_inner">
 
                         <div class="shop_list_item">
-                            <img src="01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
+                            <img src="img/02_tsukihi_logo.svg" alt="亀戸煮干中華蕎麦つきひ" class="list_img">
                             <div class="list_caption">
-                                <h3>in EDO 本店</h3>
-                                <img src="01_inezo_img.jpg" alt="in EZO 本店">
-                                <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
-                                <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
+                                <h3>亀戸煮干中華蕎麦つきひ</h3>
+                                <img src="img/02_tsukihi_img.jpg" alt="亀戸煮干中華蕎麦つきひ">
+                                <p class="list_caption_title">秋刀魚煮干と秋刀魚節の中華蕎麦</p>
+                                <p class="list_caption_txt">煮干と秋刀魚の旨みをふんだんに使った中華蕎麦！日本人ならみんな好きな味！</p>
                             </div><!--END .list_caption-->
                         </div><!--END .shop_list_item-->
 
                         <div class="shop_list_item">
-                            <img src="01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
+                            <img src="img/02_kuche_logo.png" alt="in EZO 本店" class="list_img">
                             <div class="list_caption">
-                                <h3>in EDO 本店</h3>
-                                <img src="01_inezo_img.jpg" alt="in EZO 本店">
-                                <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
-                                <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
+                                <h3>KÜCHE</h3>
+                                <img src="img/02_kuche_img.jpg" alt="in EZO 本店">
+                                <p class="list_caption_title">RAMEN KURO噌</p>
+                                <p class="list_caption_txt">大阪で人気【魔訶不思議系つけ麺KURO】の魔訶不思議なツケダレを使ったラーメン</p>
                             </div><!--END .list_caption-->
                         </div><!--END .shop_list_item-->
 
                         <div class="shop_list_item">
-                            <img src="01_inezo_logo.svg" alt="in EZO 本店" class="list_img">
+                            <img src="img/02_smile_logo.svg" alt="in EZO 本店" class="list_img">
                             <div class="list_caption">
-                                <h3>in EDO 本店</h3>
-                                <img src="01_inezo_img.jpg" alt="in EZO 本店">
-                                <p class="list_caption_title">札幌芳醇炙りじゃが白湯味噌</p>
-                                <p class="list_caption_txt">炙り豚バラが特徴！ジャガイモ使用の濃厚ヘルシー味噌×特注麺</p>
+                                <h3>のどぐろつけ麺
+                                    <br>smile</h3>
+                                <img src="img/02_smile_img.jpg" alt="in EZO 本店">
+                                <p class="list_caption_title">三重県をギュッと！伊勢海老のらぁめん</p>
+                                <p class="list_caption_txt">松阪豚×桑名もち小麦×伊勢海老出汁！地産地消の絶品ラーメン！</p>
                             </div><!--END .list_caption-->
                         </div><!--END .shop_list_item-->
+
+                        <div class="shop_list_item">
+                            <img src="img/02_daiichi-asahi_logo.svg" alt="麺屋愛心" class="list_img">
+                            <div class="list_caption">
+                                <div class="box-inner">
+                                    <h3>本家第一旭</h3>
+                                    <img src="img/02_daiichi-asahi_img.jpg" alt="麺屋愛心">
+                                
+                                <p class="list_caption_title">京都らーめん</p>
+                                <p class="list_caption_txt">昭和22年創業、京都素材香る老舗醤油ラーメン！</p>
+                            </div>
+                            </div><!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
+
+                        <div class="shop_list_item">
+                            <img src="img/02_hanamichian_logo.svg" alt="麺屋 ようすけ" class="list_img">
+                            <div class="list_caption">
+                                <div class="box-inner">
+                                    <h3>味噌麺処花道庵</h3>
+                                    <img src="img/02_hanamichian_img.jpg" alt="麺屋 ようすけ">
+                                
+                                <p class="list_caption_title">濃厚肉味噌ラーメン</p>
+                                <p class="list_caption_txt">濃厚味噌スープ×特製豚バラチャーシュー　東京味噌ラーメン！</p>
+                            </div>
+                            </div><!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
+
+                        <div class="shop_list_item">
+                            <img src="img/02_wakamusha_logo.svg" alt="麺屋 ようすけ" class="list_img">
+                            <div class="list_caption">
+                                <div class="box-inner">
+                                    <h3>麺処若武者</h3>
+                                    <img src="img/02_wakamusha_img.jpg" alt="麺屋 ようすけ">
+                                
+                                <p class="list_caption_title">濃厚福島鶏白湯</p>
+                                <p class="list_caption_txt">福島三大鶏×濃厚コラーゲンスープ　旨味凝縮贅沢鶏ラーメン</p>
+                            </div>
+                            </div><!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
+
+
+                        <div class="shop_list_item">
+                            <img src="img/02_oto_logo_b.png" alt="麺屋 ようすけ" class="list_img">
+                            <div class="list_caption">
+                                <div class="box-inner">
+                                    <h3>麺屋音</h3>
+                                    <img src="img/02_oto_img.jpg" alt="麺屋 ようすけ">
+                                
+                                <p class="list_caption_title">日本三大地鶏金色鶏白湯</p>
+                                <p class="list_caption_txt">とろとろ極上鶏白湯×豪華チャーシュー　絶品至福ラーメン！</p>
+                            </div>
+                            </div><!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
+
+                        <div class="shop_list_item">
+                            <img src="img/02_taketa_logo.svg" alt="麺屋 ようすけ" class="list_img">
+                            <div class="list_caption">
+                                <div class="box-inner">
+                                    <h3>麺家たけ田</h3>
+                                    <img src="img/02_takeda_img.jpg" alt="麺屋 ようすけ">
+                                
+                                <p class="list_caption_title">鳥取牛骨らーめん</p>
+                                <p class="list_caption_txt">鳥取で長年愛されているソウルフード、あっさり飲みやすく牛の香りがクセになる一杯。</p>
+                            </div>
+                            </div><!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
+
+                        <div class="shop_list_item">
+                            <!-- <img src="img/01_yosuke_logo.svg" alt="麺屋 ようすけ" class="list_img">
+                            <div class="list_caption">
+                                <div class="box-inner">
+                                    <h3>麺屋 ようすけ</h3>
+                                    <img src="img/01_yosuke_img.jpg" alt="麺屋 ようすけ">
+                                
+                                <p class="list_caption_title">佐野ラーメン チャーシュー盛り</p>
+                                <p class="list_caption_txt">佐野名物！ツルムチ麺×旨出汁スープ！行列必至ご当地ラーメン！</p> -->
+                            </div>
+                            </div><!--END .list_caption-->
+                        </div><!--END .shop_list_item-->
+
 
                     </div><!--END .shop_list_inner -->
                 </div>
+            </div><!--END .-->
         </div><!--END .shop_list-->
+            <!-- <section id="events">
+                <h2>開催イベント</h2>
+                <h3>2025年3月1日（土）</h3>
+                <p>12:55〜17:55 アルネットホームpresents HITS! THE TOWN 公開生放送</p>
+                <h3>2025年3月2日（日）</h3>
+                <p>14:00〜GOGOMONZ × 凄麺スペシャルお笑いステージ！</p>
+                <h3>2025年3月8日（土）</h3>
+                <p>16:00〜お笑いライブ</p>
+                <h3>2025年3月9日（日）</h3>
+                <p>12:55〜17:55 カメレオンパーティー 公開生放送</p>
+            </section> -->
 
-        <div class="map">
-            <p>アクセス</p>
-        <div class="img-box">
-            <figure>
-                <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6493.68550742672!2d135.19397868356944!3d34.6855791619222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008ef78409d861%3A0x27b99d6be70896a4!2z5p2x6YGK5ZyS5Zyw!5e0!3m2!1sja!2sjp!4v1559750440267!5m2!1sja!2sjp"
-                width="800" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
-             <figcaption>
-                ［所在地］埼玉県さいたま市中央区新都心10　［最寄駅］JR各線　さいたま新都心駅<br>
-                ［駐車場について］駐車場には限りがありますので、公共の交通機関でお越しください。
-             </figcaption>
-            </figure>
-           </div>
-        </div>
+            <div class="map">
+                <p>アクセス</p>
+                <div class="img-box">
+                    <figure>
+                        <div class="iframeWrapper">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6493.68550742672!2d135.19397868356944!3d34.6855791619222!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60008ef78409d861%3A0x27b99d6be70896a4!2z5p2x6YGK5ZyS5Zyw!5e0!3m2!1sja!2sjp!4v1559750440267!5m2!1sja!2sjp"
+                            width="900"
+                            height="300" frameborder="0" style="border:0" allowfullscreen>
+                            </iframe>
+                        </div>
+                        <figcaption>
+                            ［所在地］埼玉県さいたま市中央区新都心10<br class="sp_br">［最寄駅］JR各線　さいたま新都心駅<br>
+                            ［駐車場について］駐車場には限りがありますので、公共の交通機関でお越しください。
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
 
-        <section id="events">
-    <h2>開催イベント</h2>
-    <h3>2025年3月1日（土）</h3>
-    <p>12:55〜17:55 アルネットホームpresents HITS! THE TOWN 公開生放送</p>
-    <h3>2025年3月2日（日）</h3>
-    <p>14:00〜GOGOMONZ × 凄麺スペシャルお笑いステージ！</p>
-    <h3>2025年3月8日（土）</h3>
-    <p>16:00〜お笑いライブ</p>
-    <h3>2025年3月9日（日）</h3>
-    <p>12:55〜17:55 カメレオンパーティー 公開生放送</p>
-  </section>
+            
 
- 
-  <a href="#" class="back-to-top" title="ページの先頭へ">↑</a>
+
+            <a href="#" class="back-to-top" title="ページの先頭へ">↑</a>
 
     </main>
 
@@ -243,15 +434,15 @@
         <div class="footer_inner">
             <div class="footer_logo_area">
                 <a href="index.html">
-                    <img src="名称未設定-6.png" alt="webstreet" class="footer_logo">
+                    <img src="img/名称未設定-6.png" alt="webstreet" class="footer_logo">
                     <!-- <span class="footer_yago">WEBSTREET</span> -->
                 </a>
             </div><!--END .footer_logo_area-->
 
             <div class="sns_logo_area">
                 <a href="index.html">
-                    <img src="icons8-ツイッターx-30.jpg" alt="webstreet" class="footer_logo">
-                    <img src="icons8-instagram-50.jpg" alt="webstreet" class="footer_logo">
+                    <img src="img/icons8-ツイッターx-30.jpg" alt="webstreet" class="footer_logo">
+                    <img src="img/icons8-instagram-50.jpg" alt="webstreet" class="footer_logo">
                     <!-- <span class="footer_yago">WEBSTREET</span> -->
                 </a>
             </div><!--END .footer_logo_area-->
@@ -266,31 +457,50 @@
                     <li><a href="#">CONTACT</a></li>
                 </ul>
             </div>END .footer_nav_area -->
-            <small>主催:NJ MACS &copy; 特別協賛：イルニートホーム</small>
+            <small>主催:NJ MACS     <br class="sp_br">特別協賛：イルニートホーム</small>
         </div><!--END .footer_inner-->
     </footer>
 
 
     <!--js-->
-    <script src="jquery-3.6.0.min.js"></script>
-    <script src="function.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/vegas.js"></script>
+    <script src="js/function.js"></script>
 
     <script>
-  const backToTopButton = document.querySelector('.back-to-top');
+        const backToTopButton = document.querySelector('.back-to-top');
 
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 300) { // 300px以上スクロールで表示
-      backToTopButton.style.display = 'block';
-    } else {
-      backToTopButton.style.display = 'none';
-    }
-  });
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) { // 300px以上スクロールで表示
+                backToTopButton.style.display = 'block';
+            } else {
+                backToTopButton.style.display = 'none';
+            }
+        });
 
-  backToTopButton.addEventListener('click', function(e) {
-    e.preventDefault();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  });
-</script>
+        backToTopButton.addEventListener('click', function (e) {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+
+
+    </script>
+    <script>
+
+        document.addEventListener('scroll', function() {
+var elements = document.querySelectorAll('.subtext .line');
+
+elements.forEach(function(element) {
+var position = element.getBoundingClientRect();
+
+if (position.top < window.innerHeight && position.bottom >= 0) {
+element.classList.add('animate-line');
+}
+});
+});
+
+    </script>
 
 </body>
 
